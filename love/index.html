@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script src="https://cdn.jsdelivr.net/npm/leancloud-storage@4.15.2/dist/av-min.js"></script>
+<link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" href="favicon.png">
+<meta name="description" content="基于leancloud开发的一款网页应用，表白墙，结合css，JavaScript，实现静态网页的交互应用">
+<meta name="keywords" content="告白, 表白墙, 个人博客, 网页应用">
+<meta name="author" content="Wenbin">
+  <title>表白墙 - Wenbin&#39;s blog</title>
+</head>
+<body>
+ <div class="mask" id="loading">
+<div class="jiazai">
+<div class="loader"></div>
+<p>Loading...</p>
+    </div>
+  </div>
+  <video autoplay loop muted>
+    <source src="https://imgs-qn.51miz.com/preview/video/00/00/16/81/V-168182-40862864.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="buju">
+
+  <div class="dingbu">
+  <div class="link">
+<a href="https://bin862324915.github.io/" target="_blank">
+<button class="button">
+首页
+<div class="hoverEffect">
+<div>
+</div>
+</div></button>
+</a>
+</div>
+
+  <div class="link">
+<a href="https://github.com/bin862324915/biaobaiqiang" target="_blank">
+<button class="button">
+GitHub
+<div class="hoverEffect">
+<div>
+</div>
+</div></button>
+</a>
+</div>
+
+  <div class="link">
+<a href="https://bin862324915.github.io/about/" target="_blank">
+<button class="button">
+关于
+<div class="hoverEffect">
+<div>
+</div>
+</div></button>
+</a>
+</div>
+
+
+    </div>
+
+  <div class="zhuti">
+
+</div>
+
+
+
+  <div class="dibu">
+<div class="fabiao" id="fbyg">
+<button>
+  <svg class="empty" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"><path fill="none" d="M0 0H24V24H0z"></path><path d="M16.5 3C19.538 3 22 5.5 22 9c0 7-7.5 11-10 12.5C9.5 20 2 16 2 9c0-3.5 2.5-6 5.5-6C9.36 3 11 4 12 5c1-1 2.64-2 4.5-2zm-3.566 15.604c.881-.556 1.676-1.109 2.42-1.701C18.335 14.533 20 11.943 20 9c0-2.36-1.537-4-3.5-4-1.076 0-2.24.57-3.086 1.414L12 7.828l-1.414-1.414C9.74 5.57 8.576 5 7.5 5 5.56 5 4 6.656 4 9c0 2.944 1.666 5.533 4.645 7.903.745.592 1.54 1.145 2.421 1.7.299.189.595.37.934.572.339-.202.635-.383.934-.571z"></path></svg>
+  <svg class="filled" height="32" width="32" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0H24V24H0z" fill="none"></path><path d="M16.5 3C19.538 3 22 5.5 22 9c0 7-7.5 11-10 12.5C9.5 20 2 16 2 9c0-3.5 2.5-6 5.5-6C9.36 3 11 4 12 5c1-1 2.64-2 4.5-2z"></path></svg>
+  发表一个
+</button>
+</div>
+
+</div>
+
+<div class="mask" id="maskbiao">
+       <div class="bbkung" id="bbk">
+<textarea class="name" id="mynamein" placeholder="请输入你的昵称" oninput="limitCharacters(this, 5)"></textarea><br>
+  <textarea class="name" id="younamein" placeholder="请输入她/他的昵称" oninput="limitCharacters(this, 5)"></textarea><br>
+  <textarea class="zwk" id="zhengwenin" placeholder="在这里输入你想说的话..." oninput="limitCharacters(this, 150)"></textarea>
+  <div class="button-container">
+
+  <div class="link" id="qx">
+<button class="button">
+取消
+<div class="hoverEffect">
+<div>
+</div>
+</div></button>
+</div>
+
+  <div class="link" id="tj">
+<button class="button">
+提交
+<div class="hoverEffect">
+<div>
+</div>
+</div></button>
+</div>
+
+         </div>
+       </div>
+      </div>
+
+<div class="modal" id="modal">
+  <p id="modalText"></p>
+<button class="button"  id="closeModal">
+好的
+<div class="hoverEffect">
+<div>
+</div>
+</div></button>
+</div>
+
+
+</div>
+
+
+<script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script src="app.js"></script>
+<script>
+window.addEventListener('load', function() {
+  var colaElement = document.getElementById('loading');
+  if (colaElement) {
+    colaElement.style.display = 'none';
+  }
+});
+</script>
+</body>
+</html>
