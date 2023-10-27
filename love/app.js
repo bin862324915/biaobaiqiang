@@ -1,1 +1,192 @@
-eval(function(p,a,c,k,e,r){e=function(c){return(c<62?'':e(parseInt(c/62)))+((c=c%62)>35?String.fromCharCode(c+29):c.toString(36))};if('0'.replace(0,e)==0){while(c--)r[e(c)]=k[c];k=[function(e){return r[e]||e}];e=function(){return'([3-8qt-yA-Z]|[12]\\w)'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('Y.init({appId:\'1Ao7imckprhj98luQK1xebPA-gzGzoHsz\',appKey:\'cY0YqjpaGxRvGE4o2Mf21Zbq\',serverURL:\'1l://1ao7imck.lc-cn-n1-shared.com\',});3 Z=4.6(\'1m\');3 10=4.6(\'1n\');3 1o=4.6(\'11\');3 1p=4.6(\'tj\');3 8=4.B(\'#8\');3 C=4.B(\'#C\');3 1q=4.B(\'#closeModal\');1q.D(\'E\',()=>{8.5.q=\'F\'});8.D(\'E\',(1r)=>{w(1r.target===8){8.5.q=\'F\'}});1p.D(\'E\',()=>{3 12=Z.7;3 13=10.7;3 1s=4.6("11").7;3 1t=1s.replace(/\\n/g,"<br>");3 14=1t;w(12&&13&&14){3 1u=Y.Object.extend(\'1v\');3 G=H 1u();G.15(\'O\',12);G.15(\'P\',13);G.15(\'Q\',14);G.save().R(()=>{16();Z.7=\'\';10.7=\'\';1o.7=\'\';C.17=\'已发表，刷新网页查看哦(｡♥ᴗ♥｡) \';8.5.q=\'I\';S}).catch(()=>{C.17=\'出错啦！请重试哦(✖人✖)\';8.5.q=\'I\';S})}18{C.17=\'信息都填写了嘛？( • ̀ω•́ )✧\';8.5.q=\'I\';S}});3 1w=4.6(\'fbyg\');3 19=4.6(\'maskbiao\');3 1a=4.6(\'bbk\');3 1x=4.6(\'qx\');1w.D(\'E\',()=>{19.5.q=\'I\';1a.5.q=\'I\'});x 16(){3 1y=4.6(\'1m\');3 1z=4.6(\'1n\');3 1A=4.6(\'11\');1y.7=\'\';1z.7=\'\';1A.7=\'\';19.5.q=\'F\';1a.5.q=\'F\'}1x.D(\'E\',()=>{16();8.5.q=\'F\'});3 parentBlock=4.B(\'.1b\');3 1c=H Y.Query(\'1v\');1c.descending(\'T\');3 1d=H 1e((U,1B)=>{1c.find().R((1C)=>{1C.forEach((J)=>{3 O=J.V(\'O\');3 P=J.V(\'P\');3 Q=J.V(\'Q\');3 T=J.V(\'T\');3 y=H Date(T);3 1D=y.getFullYear();3 1E=(y.getMonth()+1).K().L(2,\'0\');3 1F=y.getDate().K().L(2,\'0\');3 1G=y.getHours().K().L(2,\'0\');3 1H=y.getMinutes().K().L(2,\'0\');3 1I=y.getSeconds().K().L(2,\'0\');3 1J=`${1D}-${1E}-${1F}${1G}:${1H}:${1I}`;3 W=4.B(\'.1b\');3 1K=W.1f;3 1L=W.1g;3 1M=t.M(t.N()*(1K-260));3 1N=t.M(t.N()*(1L-300));3 u=4.createElement(\'div\');u.className=\'u\';u.innerHTML=`<p id="biaoti">${O}想对${P}说:</p><p id="neirong">${Q}</p><p id="shijian">${1J}</p>`;3 1O=1P();u.5.backgroundColor=1O;u.5.1Q=`${1M}X`;u.5.1R=`${1N}X`;W.appendChild(u)});U()})});3 1S=H 1e((U,1B)=>{1d.R(()=>{1T(\'.u\',\'.1b\');U()})});1e.all([1d,1S]).R(()=>{console.log(\'\\n %c 表白墙❤Wenbin\\\'s blog %c 1l://bin862324915.github.io \\n\',\'color: #1U; 1V: #030307; 1W:1X 0;\',\'1V: #1U; 1W:1X 0;\')});x 1T(l,e){$(l).mousedown(x(f){v m=$(A);v h=$(e)[0].1g;v i=$(e)[0].1f;v j=$(A)[0].1g;v k=$(A)[0].1f;v n=f.1Y-$(A)[0].offsetLeft;v o=f.1Z-$(A)[0].offsetTop;$(A).1i(\'z-20\',\'9\').siblings().1i(\'z-20\',\'1\');$(4).21(x(c){v a=c.1Y-n;v d=c.1Z-o;w(a<0){a=0}18 w(a>i-k){a=i-k}w(d<0){d=0}18 w(d>h-j){d=h-j}m.1i({1Q:a+\'X\',1R:d+\'X\',})})});$(4).mouseup(x(){$(A).off(\'21\')})}x 1P(){3 r=t.M(t.N()*1j);3 g=t.M(t.N()*1j);3 b=t.M(t.N()*1j);3 22=0.9;S`rgba(${r},${g},${b},${22})`}x limitCharacters(c,a){3 1k=c.7;w(1k.length>a){c.7=1k.substring(0,a)}}',[],127,'|||const|document|style|getElementById|value|modal||||||||||||||||||display|||Math|son|var|if|function|date||this|querySelector|modalText|addEventListener|click|none|bbqRecord|new|block|record|toString|padStart|floor|random|from|to|data|then|return|createdAt|resolve|get|zhutiBlock|px|AV|mynameInput|younameInput|zhengwenin|myname|youname|zhengwen|set|bbknone|textContent|else|maskbiaoBlock|bbkBlock|zhuti|query|processLeanCloudData|Promise|offsetWidth|offsetHeight||css|256|text|https|mynamein|younamein|zhengwenInput|tjButton|closeModalButton|event|inputText|convertedText|BBQ|bbq|fbygBlock|qxan|input1|input2|input3|reject|bbqRecords|year|month|day|hours|minutes|seconds|formattedDate|zhutiWidth|zhutiHeight|randomX|randomY|randomColor|getRandomBackgroundColor|left|top|initializeDragFunction|dragFn|fadfa3|background|padding|5px|clientX|clientY|index|mousemove|alpha'.split('|'),0,{}))
+AV.init({
+  appId: '1Ao7imckprhj98luQK1xebPA-gzGzoHsz',
+  appKey: 'cY0YqjpaGxRvGE4o2Mf21Zbq',
+  serverURL: 'https://1ao7imck.lc-cn-n1-shared.com',
+});
+
+const mynameInput = document.getElementById('mynamein');
+const younameInput = document.getElementById('younamein');
+const zhengwenInput = document.getElementById('zhengwenin');
+const tjButton = document.getElementById('tj');
+const modal = document.querySelector('#modal');
+const modalText = document.querySelector('#modalText');
+const closeModalButton = document.querySelector('#closeModal');
+
+closeModalButton.addEventListener('click', () => {
+  modal.style.display = 'none';
+});
+modal.addEventListener('click', (event) => {
+  if (event.target === modal) {
+    modal.style.display = 'none';
+  }
+});
+tjButton.addEventListener('click', () => {
+  const myname = mynameInput.value;
+  const youname = younameInput.value;
+  const inputText = document.getElementById("zhengwenin").value;
+  const convertedText = inputText.replace(/\n/g, "<br>");
+  const zhengwen = convertedText;
+
+  if (myname && youname && zhengwen) {
+    const BBQ = AV.Object.extend('bbq');
+    const bbqRecord = new BBQ();
+    bbqRecord.set('from', myname);
+    bbqRecord.set('to', youname);
+    bbqRecord.set('data', zhengwen);
+    bbqRecord.save().then(() => {
+      bbknone();
+      mynameInput.value = '';
+      younameInput.value = '';
+      zhengwenInput.value = '';
+      modalText.textContent = '已发表，刷新网页查看哦(｡♥ᴗ♥｡) ';
+      modal.style.display = 'block';
+      return;
+    }).catch(() => {
+    modalText.textContent = '出错啦！请重试哦(✖人✖)';
+    modal.style.display = 'block';
+    return;
+    });
+  } else {
+    modalText.textContent = '信息都填写了嘛？( • ̀ω•́ )✧';
+    modal.style.display = 'block';
+    return;
+  }
+});
+const fbygBlock = document.getElementById('fbyg');
+const maskbiaoBlock = document.getElementById('maskbiao');
+const bbkBlock = document.getElementById('bbk');
+const qxan = document.getElementById('qx');
+fbygBlock.addEventListener('click', () => {
+  maskbiaoBlock.style.display = 'block';
+  bbkBlock.style.display = 'block';
+});
+
+function bbknone() {
+  const input1 = document.getElementById('mynamein');
+  const input2 = document.getElementById('younamein');
+  const input3 = document.getElementById('zhengwenin');
+  input1.value = '';
+  input2.value = '';
+  input3.value = '';
+  maskbiaoBlock.style.display = 'none';
+  bbkBlock.style.display = 'none';
+}
+
+qxan.addEventListener('click', () => {
+  bbknone();
+  modal.style.display = 'none';
+});
+
+const parentBlock = document.querySelector('.zhuti');
+const query = new AV.Query('bbq');
+query.descending('createdAt');
+const processLeanCloudData = new Promise((resolve, reject) => {
+  query.find().then((bbqRecords) => {
+    bbqRecords.forEach((record) => {
+      const from = record.get('from');
+      const to = record.get('to');
+      const data = record.get('data');
+      const createdAt = record.get('createdAt');
+	const date = new Date(createdAt);
+	const year = date.getFullYear();
+	const month = (date.getMonth() + 1).toString().padStart(2, '0');
+	const day = date.getDate().toString().padStart(2, '0');
+	const hours = date.getHours().toString().padStart(2, '0');
+	const minutes = date.getMinutes().toString().padStart(2, '0');
+	const seconds = date.getSeconds().toString().padStart(2, '0');
+	const formattedDate = `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
+	const zhutiBlock = document.querySelector('.zhuti');
+	const zhutiWidth = zhutiBlock.offsetWidth;
+	const zhutiHeight = zhutiBlock.offsetHeight;
+	const randomX = Math.floor(Math.random() * (zhutiWidth - 260)); 
+	const randomY = Math.floor(Math.random() * (zhutiHeight - 300));
+	const son = document.createElement('div');
+	son.className = 'son';
+
+  son.innerHTML = `
+  <p id="biaoti">${from} 想对 ${to} 说:</p>
+  <p id="neirong">${data}</p>
+  <p id="shijian">${formattedDate}</p>
+`;
+
+	const randomColor = getRandomBackgroundColor();
+	son.style.backgroundColor = randomColor;
+	son.style.left = `${randomX}px`;
+	son.style.top = `${randomY}px`;
+	zhutiBlock.appendChild(son);
+    });
+    resolve();
+  });
+});
+const initializeDragFunction = new Promise((resolve, reject) => {
+  processLeanCloudData.then(() => {
+    dragFn('.son', '.zhuti');
+    resolve();
+  });
+});
+
+Promise.all([processLeanCloudData, initializeDragFunction]).then(() => {
+  console.log(`
+                    _     _         _     _             
+                   | |   (_)       | |   | |            
+__      _____ _ __ | |__  _ _ __   | |__ | | ___   __ _ 
+\\ \\ /\\ / / _ \\ '_ \\| '_ \\| | '_ \\  | '_ \\| |/ _ \\ / _\` |
+ \\ V  V /  __/ | | | |_) | | | | | | |_) | | (_) | (_| |
+  \\_/\\_/ \\___|_| |_|_.__/|_|_| |_| |_.__/|_|\\___/ \\__, |
+                                                   __/ |
+                                                  |___/
+`);
+});
+
+
+function dragFn(dragObj, parent) {
+  $(dragObj).mousedown(function (e) {
+    var _this = $(this);
+    var parent_h = $(parent)[0].offsetHeight;
+    var parent_w = $(parent)[0].offsetWidth;
+    var drag_h = $(this)[0].offsetHeight;
+    var drag_w = $(this)[0].offsetWidth;
+    var dragX = e.clientX - $(this)[0].offsetLeft;
+    var dragY = e.clientY - $(this)[0].offsetTop;
+
+    $(this).css('z-index', '9').siblings().css('z-index', '1');
+
+    $(document).mousemove(function (e) {
+      var l = e.clientX - dragX;
+      var t = e.clientY - dragY;
+      if (l < 0) {
+        l = 0;
+      } else if (l > parent_w - drag_w) {
+        l = parent_w - drag_w;
+      }
+      if (t < 0) {
+        t = 0;
+      } else if (t > parent_h - drag_h) {
+        t = parent_h - drag_h;
+      }
+      _this.css({
+        left: l + 'px',
+        top: t + 'px',
+      });
+    });
+  });
+  $(document).mouseup(function () {
+    $(this).off('mousemove');
+  });
+}
+
+function getRandomBackgroundColor() {
+  const r = Math.floor(Math.random() * 256);
+  const g = Math.floor(Math.random() * 256);
+  const b = Math.floor(Math.random() * 256);
+  const alpha = 0.9;
+
+  return `rgba(${r},${g},${b},${alpha})`;
+}
+
+function limitCharacters(textarea, maxCharacters) {
+  const text = textarea.value;
+  if (text.length > maxCharacters) {
+    textarea.value = text.substring(0, maxCharacters);
+  }
+}

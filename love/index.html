@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <script src="https://cdn.jsdelivr.net/npm/leancloud-storage@4.15.2/dist/av-min.js"></script>
+<meta charset="UTF-8">
+<script src="https://cdn.jsdelivr.net/npm/leancloud-storage@4.15.2/dist/av-min.js"></script>
+<script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
 <link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css" media="print" onload="this.media='all'">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="icon" href="favicon.png">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="icon" href="favicon.png">
 <meta name="description" content="基于leancloud开发的一款网页应用，表白墙，结合css，JavaScript，实现静态网页的交互应用">
 <meta name="keywords" content="告白, 表白墙, 个人博客, 网页应用">
+<meta property="og:image" content="https://imgsrc.baidu.com/forum/pic/item/0b46f21fbe096b63fbe998644a338744ebf8ac16.jpg">
 <meta name="author" content="Wenbin">
+<audio id="background-music" autoplay loop>
+  <source src="https://webfs.hw.kugou.com/202310261708/8584d09a4df63b6766627c63d9bc6a90/v2/626150781a1b13449bd07a3caba7aa0e/G334/M06/EB/18/LpUEAGTOH26AZygoADPCyCax4bM072.mp3" type="audio/mpeg">
+</audio>
   <title>表白墙 - Wenbin&#39;s blog</title>
 </head>
 <body>
@@ -18,10 +23,85 @@
 <p>Loading...</p>
     </div>
   </div>
-  <video autoplay loop muted>
-    <source src="https://imgs-qn.51miz.com/preview/video/00/00/16/81/V-168182-40862864.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+<div class='real_mask' style="
+		background-color: rgba(0,0,0,0.1);
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		z-index: -77;
+	"></div>
+	<div id="banner_video_insert">
+	</div>	
+	<div id='vvd_banner_img'>
+	</div>
+</div>
+<div id="banner"></div>
+
+
+	<div class="banner" id='banner' >
+
+		<div class="full-bg-img" >
+
+			
+				<script>
+					var ua = navigator.userAgent;
+					var ipad = ua.match(/(iPad).*OS\s([\d_]+)/),
+						isIphone = !ipad && ua.match(/(iPhone\sOS)\s([\d_]+)/),
+						isAndroid = ua.match(/(Android)\s+([\d.]+)/),
+						isMobile = isIphone || isAndroid;
+
+					function set_video_attr(id){
+
+						var height = document.body.clientHeight
+						var width = document.body.clientWidth
+						var video_item = document.getElementById(id);
+
+						if (height / width < 0.56){
+							video_item.setAttribute('width', '100%');
+							video_item.setAttribute('height', 'auto');
+						} else {
+							video_item.setAttribute('height', '100%');
+							video_item.setAttribute('width', 'auto');
+						}
+					}
+
+					$.getJSON('https://cdn.jsdelivr.net/gh/bin862324915/blog-cdn@main/js/video.json', function(data){
+						if (true){
+							var video_list_length = data.length
+							var seed = Math.random()
+							index = Math.floor(seed * video_list_length)
+							
+							video_url = data[index][0]
+							pre_show_image_url = data[index][1]
+							
+							banner_obj = document.getElementById("banner")
+							banner_obj.style.cssText = "background: url('" + pre_show_image_url + "') no-repeat; background-size: cover;"
+
+							vvd_banner_obj = document.getElementById("vvd_banner_img")
+
+							vvd_banner_content = "<img id='banner_img_item' src='" + pre_show_image_url + "' style='height: 100%; position: fixed; z-index: -999'>"
+							vvd_banner_obj.innerHTML = vvd_banner_content
+							set_video_attr('banner_img_item')
+
+							if (!isMobile) {
+								video_html_res = "<video id='video_item' style='position: fixed; z-index: -888;'  muted='muted' src=" + video_url + " autoplay='autoplay' loop='loop'></video>"
+								document.getElementById("banner_video_insert").innerHTML = video_html_res;
+								set_video_attr('video_item')
+							}
+						}
+					});
+
+					if (!isMobile){
+						window.onresize = function(){
+							set_video_attr('video_item')
+							}
+						}
+				</script>
+			
+			</div>
+		</div>
+    </div>
+
   <div class="buju">
 
   <div class="dingbu">
@@ -57,6 +137,8 @@ GitHub
 </div></button>
 </a>
 </div>
+
+
 
 
     </div>
@@ -120,14 +202,27 @@ GitHub
 
 </div>
 
+<input id="checkbox" type="checkbox">
+    <label class="Switch" for="checkbox">
+    </label>
 
-<script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
 <script src="app.js"></script>
 <script>
 window.addEventListener('load', function() {
   var colaElement = document.getElementById('loading');
   if (colaElement) {
     colaElement.style.display = 'none';
+  }
+});
+</script>
+<script>
+var audio = document.getElementById("background-music");
+var checkbox = document.getElementById("checkbox");
+checkbox.addEventListener("click", function() {
+  if (audio.paused) {
+    audio.play();
+  } else {
+    audio.pause();
   }
 });
 </script>
